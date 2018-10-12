@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Teste</title>
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <body>
+    <ul id="menu">
+      <li><a href="/">Home</a></li>
+      <li><a href="/pets">Pet</a></li>
+      <li><a href="/veterinary_record">Veterinary Record</a></li>
+      <li><a href="/create_veterinary_record">Create New</a></li>
+    </ul>
+
+    <%= yield %>
+  </body>
+</html>
